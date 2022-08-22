@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json.
 {
 	"name": "Drupal Dev",
-	"image": "_/drupal/drupal:latest",
+	"image": "drupal/library/drupal:latest",
 	// The order of the files is important since later files override previous ones
 	// "dockerComposeFile": ["../docker-compose.yml", "docker-compose.extend.yml"],
   
