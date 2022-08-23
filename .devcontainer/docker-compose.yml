@@ -7,7 +7,7 @@
 # Database type: PostgreSQL
 # Database name: postgres
 # Database username: postgres
-# Database password: example
+# Database password: Developer123*
 # ADVANCED OPTIONS; Database host: postgres
 
 version: '3'
@@ -31,5 +31,5 @@ services:
   postgres:
     image: postgres:10
     environment:
-      POSTGRES_PASSWORD: example
+      POSTGRES_PASSWORD: Developer123*
     restart: always
