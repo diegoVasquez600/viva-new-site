@@ -1,30 +1,56 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/docker-from-docker-compose
 {
-	"name": "Docker from Docker Compose",
+	"name": "Drupal DevEnvironment",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "drupal",
-	"workspaceFolder": "/workspace",
-
-	// Use this environment variable if you need to bind mount your local source code into a new container.
-	"remoteEnv": {
-		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	"workspaceMount": "source=${localWorkspaceFolder},target=/opt/drupal,type=bind,consistency=delegated",
+	"workspaceFolder": "/opt/drupal",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"remote.localPortHost": "allInterfaces",
+		/* https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code */
+		"breadcrumbs.enabled": true,
+		"css.validate": true,
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": false,
+		"editor.renderWhitespace": "boundary",
+		"editor.wordWrapColumn": 80,
+		"editor.wordWrap": "off",
+		"editor.detectIndentation": true,
+		"editor.rulers": [
+		  80
+		]
 	},
-
+	// Use this environment variable if you need to bind mount your local source code into a new container.
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
-		"vscode": {		
+		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"xdebug.php-debug",
+				"bmewburn.vscode-intelephense-client",
+				"mrmlnc.vscode-apache",
+				"whatwedo.twig",
+				"ikappas.composer",
+				"dmitrydorofeev.empty-indent",
+				"42crunch.vscode-openapi",
+				"neilbrayfield.php-docblocker",
+				"persoderlind.vscode-phpcbf",
+				"shevaua.phpcs",
+				"humao.rest-client",
+				"irongeek.vscode-env",
+				"calebporzio.better-phpunit"
 			]
 		}
 	},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "docker --version",
+	"forwardPorts": [],
+	"appPort": [
+		"80:80"
+	]
 }
