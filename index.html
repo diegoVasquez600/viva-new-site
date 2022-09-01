@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>VivaEnvigado</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=90f5fdcce4ee8b8dbe147b90eb3a878c">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?h=13df2f486d874f68e857c16f2736206d">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!-- Start: Navbar top negra -->
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3"
+    style="height:35px !important; background-color:#000000 !important;">
+    <div class="container">
+      <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-6"><span
+          class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-6">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item text-white text text-center mt-2" style="color:#FFD600 !important;">Estas en</li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color:#FFFFFF !important;">
+              Viva Envigado
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#000000 !important;">
+              <li><a class="dropdown-item" href="#" style="color:#ffffff !important;">Viva Barranquilla</a></li>
+              <li><a class="dropdown-item" href="#" style="color:#ffffff !important;">Viva Suba</a></li>
+              <li>
+                <hr class="dropdown-divider" style="color:#ffffff !important;">
+              </li>
+              <li><a class="dropdown-item" href="#" style="color:#ffffff !important;">Viva Online</a></li>
+            </ul>
+          </li>
+          <li class="nav-item text-white text text-center mt-2 ps-4" style="color:#FFD600 !important;"><i
+              class="bi-stopwatch"></i></li>
+          <li class="nav-item text-white text text-center mt-2 ps-1" style="color:#ffffff !important;">Abierto 9 am a 9
+            pm</li>
+          <li class="nav-item text-white text text-center mt-2 ps-4" style="color:#FFD600 !important;"><i
+              class="bi-cloud-sun"></i></li>
+          <li class="nav-item text-white text text-center mt-2 ps-1" style="color:#ffffff !important;">24°C</li>
+          <li class="nav-item text-white text text-center mt-2 ps-4" style="color:#FFD600 !important;"><i
+              class="bi-geo-alt"></i></li>
+          <li class="nav-item text-white text text-center mt-2 ps-1" style="color:#ffffff !important;">Cómo llegar</li>
+        </ul>
+        <div class="vr me-2 ms-5" style="color:#FFFFFF !important;"></div>
+  </nav><!-- End: Navbar top negra -->
+  <!-- Start: Navbar Principal -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-5" href="#">
+        <img src="assets/Images/LogoViva.png" alt="20" width="80" height="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Diretorios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agenda</a>
+          </li>
+        </ul>
+        <form class="container-fluid justify-content-start ps-5">
+          <button id="BotonViva" class="btn BotonViva" type="button"><i class=" bi bi-cart pe-2"
+              style="font-size: 18px; text-align: center;"></i>Compra Online</button>
+        </form>
+        <div class="input-group SearchBody">
+            <input type="search" id="form1" class="form-control InputSearch" placeholder="¿Qué estás buscando hoy?"/>
+          <button type="button" class="btn SearchBtn">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End: Navbar Proncipal -->
+  <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
+    <div class="carousel-inner">
+      <div class="carousel-item active" href="#"><img class="w-100 d-block" src="assets/Images/Banner@2x.png"
+          alt="Slide Image"></div>
+      <div class="carousel-item"><img class="w-100 d-block" src="assets/Images/Banner@2x.png" alt="Slide Image"></div>
+      <div class="carousel-item"><img class="w-100 d-block" src="assets/Images/Banner@2x.png" alt="Slide Image"></div>
+    </div>
+    <div>
+      <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button"
+        data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span
+          class="visually-hidden">Previous</span></a><!-- End: Previous -->
+      <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span
+          class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a><!-- End: Next -->
+    </div>
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+    </ol>
+  </div><!-- Start: Lightbox Gallery -->
+  <section class="photo-gallery py-4 py-xl-5">
+    <div class="container">
+      <!-- Start: Logos Viva -->
+      <div class="row gx-2 gy-2 row-cols-12 row-cols-md-12 row-cols-xl-12 photos" data-bss-baguettebox="">
+        <div class="col item"><a href="#"><img class="img-fluid" src="assets/Images/Bistromarket.png"></a></div>
+        <div class="col item ps-3"><a href="#"><img class="img-fluid" src="assets/Images/CalleBistro.png"></a></div>
+        <div class="col item ps-3"><a href="#"><img class="img-fluid" src="assets/Images/vivaPark.png"></a></div>
+        <div class="col item ps-3"><a href="#"><img class="img-fluid" src="assets/Images/vivaSports.png"></a></div>
+        <div class="col item ps-3"><a href="#"><img class="img-fluid" src="assets/Images/vivaMotors.png"></a></div>
+        <div class="col item ps-3"><a href="#"><img class="img-fluid" src="assets/Images/vivaPets.png"></a></div>
+      </div><!-- End: Logos Viva -->
+    </div><!-- Start: Eventos Cards -->
+    <div class="container py-4 py-xl-5 mt-5">
+      <h2 class="card-title">Próximos eventos</h2>
+      <div class="row mb-2">
+        <div class="col">
+          <p class="w-lg-50 card-text">En viva envigado siempre encontrarás un evento hecho especialmente para cada
+            gusto y emoción.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-height: 100%; max-width:100%; background-color:#E6E6E6;">
+        <div class="row gx-0">
+          <div class="col-md-7">
+            <img src="assets/Images/MINIATURA2@2x.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <h5 class="card-title">Jardín de emociones</h5>
+              <br>
+              <p class="card-text">
+                En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre nuestro girasol de
+                alegría y fuente
+                de la tranquilidad.
+                <br>
+              </p>
+              <br>
+              <p><b>Todos los días del 3 al 15 de agosto</b></p>
+              <p>De 10:00 a.m. a 9:00 p.m.</p>
+              <br>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#6E6E6E; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4 row-cols-1 row-cols-md-3 row-cols-xl-3">
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 246px; width: 360px;"
+              src="assets/Images/Colpagoza.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Colombia pa’gozar</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad.</p>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#6E6E6E; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 246px; width: 360px;"
+              src="assets/Images/Bancolombia.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Descuentos Bancolombia</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad.</p>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#6E6E6E; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 246px; width: 360px;"
+              src="assets/Images/memocionaCOL.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Me emociona Colombia</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad.</p>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#6E6E6E; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-4 offset-xxl-5 text-center">
+          <button class="btn text-center BtnEventos" type="button">VISITA NUESTRA AGENDA<i
+              class="bi bi-arrow-right ps-2" style="color:#FFFFFF;"></i></button>
+        </div>
+      </div>
+    </div><!-- End: Eventos Cards -->
+    <!-- Start: Promo Cards -->
+    <div class="container py-4 py-xl-5">
+      <h2>Promociones</h2>
+      <div class="row mb-2">
+        <div class="col">
+          <p class="w-lg-50">En viva envigado siempre encontrarás un evento hecho especialmente para cada gusto y
+            emoción.</p>
+        </div>
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <button class="btn btn-outline-dark text-align BtnPromos" type="button">VER TODAS LAS PROMOCIONES<i
+              class="bi bi-arrow-right ps-2" style="color:#FF671D;"></i></button>
+        </div>
+      </div>
+
+      <div class="row gy-4 row-cols-1 row-cols-md-3 row-cols-xl-3">
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 423px; width:376px;"
+              src="assets/Images/ganaPtsCol.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Gana puntos con tus compras</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad.</p>
+              <button class="btn text-center"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#FF671D; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 423px; width:376px;"
+              src="assets/Images/EstrenasCarro.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Estrena Carro este año</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad.</p>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#FF671D; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 423px; width:376px;"
+              src="assets/Images/Coleccion.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Únete a la recolección</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad</p>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#FF671D; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End: Promo Cards -->
+    <!-- Start: Cinecolombia -->
+    <section class="py-4 py-xl-5">
+      <div class="container" style="background-image: url(assets/Images/FondoCine.png);">
+        <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center">
+          <div class="row">
+            <div class="col"><img src="" style="width: 108px;"></div>
+            <div
+              class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
+              <div>
+                <h1 class="text-uppercase fw-bold mb-3">Cartelera de cine / Estrenos</h1>
+              </div>
+            </div>
+            <div class="col"><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">Button</button></div>
+            <div class="w-100"></div>
+            <div class="w-100"></div>
+            <div class="w-100"></div>
+            <div class="col">
+              <div class="card"><img src=""
+                  style="height: 413px; width: 275px;">
+                <div class="card-img-overlay">
+                  <h4>Title</h4>
+                  <p>Paragraph</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"><img class="card-img w-100 d-block">
+                <div class="card-img-overlay">
+                  <h4>Title</h4>
+                  <p>Paragraph</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"><img class="card-img w-100 d-block">
+                <div class="card-img-overlay">
+                  <h4>Title</h4>
+                  <p>Paragraph</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End: Cinecolombia -->
+    <!-- Start: Cabecera Productos -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Heading</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="w-lg-50">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc.
+            Vestibulum dui eget ultrices.</p>
+        </div>
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <button class="btn btn-outline-dark text-align BtnTienas" type="button">IR AL DIRECTORIO<i
+              class="bi bi-arrow-right ps-2" style="color:#61159B;"></i></button>
+        </div>
+      </div>
+    </div><!-- End: Cabecera Productos -->
+    <!-- Start: Product Slider -->
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" data-bs-pause="false"
+      id="carousel-top-margin">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background: #ffffff;">
+          <div class="row g-0 slider-row">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 1</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 2</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 3</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 4</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background: #ffffff;">
+          <div class="row g-0 slider-row">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 5</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 6</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 7</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 8</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none">
+        <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-top-margin" role="button"
+          data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span
+            class="visually-hidden">Previous</span></a><!-- End: Previous -->
+        <!-- Start: Next --><a class="carousel-control-next" href="#carousel-top-margin" role="button"
+          data-bs-slide="next"><span class="carousel-control-next-icon"></span><span
+            class="visually-hidden">Next</span></a><!-- End: Next -->
+      </div>
+    </div><!-- End: Product Slider -->
+    <!-- Start: Gallery Offset Grid -->
+    <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
+      <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" style="max-width: 800px;">
+        <div class="col order-md-first">
+          <div class="card"><img class="card-img w-100 d-block"
+              src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+              <h4>Title</h4>
+              <p>Volutpat habitasse risus posuere, commodo fusce donec. Turpis donec tristique.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-md-flex order-first justify-content-md-start align-items-md-end order-md-1">
+          <div style="width: 80%;">
+            <h2>Litora vivamus dui, nam aliquam aenean</h2>
+            <p class="w-lg-50">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc.
+              Vestibulum dui eget ultrices.</p>
+          </div>
+        </div>
+        <div class="col order-md-2">
+          <div class="card"><img class="card-img w-100 d-block"
+              src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+              <h4>Title</h4>
+              <p>Volutpat habitasse risus posuere, commodo fusce donec. Turpis donec tristique.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col order-md-2">
+          <div class="card"><img class="card-img w-100 d-block"
+              src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+            <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+              <h4>Title</h4>
+              <p>Volutpat habitasse risus posuere, commodo fusce donec. Turpis donec tristique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End: Gallery Offset Grid -->
+    <!-- Start: Cabecera2 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Heading</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Paragraph</p>
+        </div>
+      </div>
+    </div><!-- End: Cabecera2 -->
+    <!-- Start: Responsive Product Slider -->
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" data-bs-pause="false"
+      id="carousel-top-margin">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background: #ffffff;">
+          <div class="row g-0 slider-row">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 1</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 2</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 3</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 4</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background: #ffffff;">
+          <div class="row g-0 slider-row">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 5</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 6</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 7</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 8</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none">
+        <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-top-margin" role="button"
+          data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span
+            class="visually-hidden">Previous</span></a><!-- End: Previous -->
+        <!-- Start: Next --><a class="carousel-control-next" href="#carousel-top-margin" role="button"
+          data-bs-slide="next"><span class="carousel-control-next-icon"></span><span
+            class="visually-hidden">Next</span></a><!-- End: Next -->
+      </div>
+    </div><!-- End: Responsive Product Slider -->
+    <div class="row">
+      <div class="col-xxl-4 offset-xxl-5 text-center pb-3 pt-1">
+        <button class="btn text-center BtnCompras" type="button">
+          <i class=" bi bi-cart" style="font-size: 18px; text-align: center;"></i>
+          <br><br>Compra Online<br><br>
+          <i class="bi bi-arrow-right" style="color:#FFFFFF;"></i></button>
+      </div>
+    </div>
+    <!-- Start: Responsive Product Slider -->
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" data-bs-pause="false"
+      id="carousel-top-margin-1">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background: #ffffff;">
+          <div class="row g-0 slider-row">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 1</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 2</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 3</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 4</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background: #ffffff;">
+          <div class="row g-0 slider-row">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 5</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 6</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 7</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 offset-sm-0">
+              <!-- Start: #1 -->
+              <div class="card">
+                <div class="card-body text-center"
+                  style="border-width: 0px !important;background: #eaeaea; border-radius: 15px; margin-bottom: 10px;">
+                  <h4 class="card-title price-head">Title 8</h4>
+                  <h6 class="text-muted card-subtitle mb-2">Sub Head</h6>
+                  <h1 class="price-cost">Price</h1>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6>
+                  <h6 class="text-muted card-subtitle mb-2 subs">Info</h6><button class="btn btn-secondary"
+                    type="button" style="min-width: 100%;">Button Title</button>
+                </div>
+              </div><!-- End: #1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none">
+        <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-top-margin-1" role="button"
+          data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span
+            class="visually-hidden">Previous</span></a><!-- End: Previous -->
+        <!-- Start: Next --><a class="carousel-control-next" href="#carousel-top-margin-1" role="button"
+          data-bs-slide="next"><span class="carousel-control-next-icon"></span><span
+            class="visually-hidden">Next</span></a><!-- End: Next -->
+      </div>
+    </div><!-- End: Responsive Product Slider -->
+
+    <!-- Start: Cabecera Productos -->
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Vivablog</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="w-lg-50">Inspírate con nuestro contenido creado para ti</p>
+        </div>
+      </div>
+    </div><!-- End: Cabecera Productos -->
+
+
+    <!-- Start: Articles Cards -->
+    <div class="container py-4 py-xl-5">
+      <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 423px; width:376px;"
+              src="assets/Images/Coleccion.png">
+            <div class="card-body p-4">
+              <h4 class="card-title">Únete a la recolección</h4>
+              <p class="card-text">En Viva Envigado sembramos un campo de experiencias con flores. Visítanos y descubre
+                nuestro girasol de alegría y fuente
+                de la tranquilidad</p>
+              <button class="btn"><i class="bi bi-arrow-right-circle-fill"
+                  style="color:#FF671D; font-size:2rem;"></i></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
+              src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+            <div class="card-body p-4">
+              <p class="text-primary card-text mb-0">Article</p>
+              <h4 class="card-title">Lorem libero donec</h4>
+              <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+              <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50"
+                  src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                <div>
+                  <p class="fw-bold mb-0">John Smith</p>
+                  <p class="text-muted mb-0">Erat netus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
+              src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+            <div class="card-body p-4">
+              <p class="text-primary card-text mb-0">Article</p>
+              <h4 class="card-title">Lorem libero donec</h4>
+              <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+              <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50"
+                  src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                <div>
+                  <p class="fw-bold mb-0">John Smith</p>
+                  <p class="text-muted mb-0">Erat netus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End: Articles Cards -->
+
+    <div class="row">
+      <div class="col-xxl-4 offset-xxl-5 text-center">
+        <button class="btn text-center BtnBlog" type="button">VISITA VIVABLOG<i class="bi bi-arrow-right ps-2"
+            style="color:#FFFFFF;"></i></button>
+      </div>
+    </div>
+
+    <!-- Start: Newsletter Subscription Color -->
+    <section class="py-4 py-xl-5">
+      <div class="container">
+        <div
+          class="text-white bg-dark border rounded border-0 border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5 NewsletterBlock">
+          <div class="text-center text-lg-start py-3 py-lg-1" style="width: 348px; height: 150px;">
+            <h2 class="mb-2 TextNewslet"><strong>Promociones, Eventos, ofertas exclusivas</strong></h2>
+            <p class="mb-3 TextNewsletP" style="width: 348px; height: 67px;">Haz parte del vivaclub y participa por un
+              bono de $2’000.000 para que compres lo que quieras en los cc.Viva o en
+              vivaonline.com.co</p>
+          </div>
+          <form>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <fieldset class="row mb-3">
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1"
+                    style="font: normal normal normal 13px/25px Poppins;">
+                    Acepto términos y condiciones
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn NewslwtBtn">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section><!-- End: Newsletter Subscription Color -->
+    <!-- Start: 1 Row 4 Columns -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+      </div>
+    </div><!-- End: 1 Row 4 Columns -->
+    <div class="container py-4 py-lg-5">
+      <iframe src="https://www.instagram.com/p/Bzqnjr4AH3J/embed" allowtransparency="true" frameborder="0"
+        scrolling="no" width="320" height="550"></iframe>
+    </div>
+    <hr class="DivisorMorado">
+    <!-- Start: Footer Multi Column -->
+    <footer>
+      <div class="row justify-content-center">
+        <!-- Start: Services -->
+        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+          <h3 class="fs-6">Contacto</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary" href="#">Web design</a></li>
+            <li><a class="link-secondary" href="#">Development</a></li>
+            <li><a class="link-secondary" href="#">Hosting</a></li>
+          </ul>
+        </div><!-- End: Services -->
+        <!-- Start: About -->
+        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+          <h3 class="fs-6">Sobre Viva</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary" href="#">Company</a></li>
+            <li><a class="link-secondary" href="#">Team</a></li>
+            <li><a class="link-secondary" href="#">Legacy</a></li>
+          </ul>
+        </div><!-- End: About -->
+        <!-- Start: Careers -->
+        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+          <h3 class="fs-6">Legal</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary" href="#">Job openings</a></li>
+            <li><a class="link-secondary" href="#">Employee success</a></li>
+            <li><a class="link-secondary" href="#">Benefits</a></li>
+          </ul>
+        </div><!-- End: Careers -->
+        <!-- Start: Careers -->
+        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+          <h3 class="fs-6">Encuentra lo que necesitas</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary" href="#">Job openings</a></li>
+            <li><a class="link-secondary" href="#">Employee success</a></li>
+            <li><a class="link-secondary" href="#">Benefits</a></li>
+          </ul>
+        </div><!-- End: Careers -->
+      </div>
+      <div class="d-flex justify-content-between align-items-center pt-3">
+        <p class="text-muted mb-0">Copyright © 2022 Viva, una marca de Centros Comerciales del Grupo Éxito. Todos los
+          derechos reservados. Prohibida la reproducción parcial
+          o total de este contenido.</p>
+        </ul>
+      </div>
+    </footer><!-- End: Footer Multi Column -->
+  </section><!-- End: Lightbox Gallery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+  <script src="/assets/js/script.min.js?h=871eaf34490f6ede138d4310d8a62bd3"></script>
+</body>
+
+</html>
