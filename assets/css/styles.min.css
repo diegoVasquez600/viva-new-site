@@ -10,7 +10,28 @@
 .fit-cover {
   object-fit: cover
 }
+.RestaurantInfo {
+  width: 120px;
+  height: 120px;
+  background-color: #E21F28;
+}
+/* Align card to left */
+.CardTitle {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
 
+.cardDescription{
+  font-size: 10px;
+  font-family: Poppins;
+  text-align: end;
+  color: white;
+  margin-top: 40px;
+}
 .navigation-clean-button .action-button:active,
 .navigation-clean-search .action-button {
   background: #56c6c6;
